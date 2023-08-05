@@ -73,6 +73,17 @@ footer nav a {
     font-size: small;
 }
 
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text p {
+    margin: 5px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     header {
         display: block;
