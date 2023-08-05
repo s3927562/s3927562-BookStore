@@ -77,10 +77,11 @@ footer nav a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: auto 50px;
 }
 
 .text p {
-    margin: 5px;
+    margin: 5px auto;
     text-align: center;
 }
 
