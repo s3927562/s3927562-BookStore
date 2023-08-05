@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="images/icon.jpg" alt="BookStore Logo"></a>
+        <div id="nav-icon">☰</div>
+        <nav>
+            <ul>
+                <li><a href="category1.html">Category 1</a></li>
+                <li><a href="category2.html">Category 2</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="copyright.html">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div class="heading text">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="main text">
+                <form action="">
+                    <p>
+                        <label for="form-purpose">Contact purpose</label>
+                        <select id="form-purpose" name="purpose">
+                            <option value="sell">I want to sell books</option>
+                            <option value="buy">I want to buy books</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="form-name">Name</label>
+                        <input type="text" id="form-name" name="name">
+                    </p>
+                    <p>
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-email" name="email">
+                    </p>
+                    <p>
+                        <label for="form-phone">Phone</label>
+                        <input type="tel" id="form-phone" name="phone">
+                    </p>
+                    <p>
+                        Contact preference
+                        <input type="checkbox" id="form-pref-email" name="pref" value="email">
+                        <label for="form-pref-email">By email</label>
+                        <input type="checkbox" id="form-pref-phone" name="pref" value="phone">
+                        <label for="form-pref-phone">By phone</label>
+                    </p>
+                    <p>
+                        Receive weekly newsletter
+                        <input type="radio" id="form-promo-yes" name="promo" value="yes" checked>
+                        <label for="form-promo-yes">Yes</label>
+                        <input type="radio" id="form-promo-no" name="promo" value="no">
+                        <label for="form-promo-no">No</label>
+                    </p>
+                    <p>
+                        <label for="form-notes">Extra notes</label>
+                        <textarea name="notes" id="form-notes" cols="30" rows="10"></textarea>
+                    </p>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="copyright.html">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
