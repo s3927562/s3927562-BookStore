@@ -20,12 +20,12 @@ header {
 
 #nav-icon {
     text-align: top;
-    font-size: 20px;
+    /* Hamburger icon is actually text */
     font-size: xx-large;
     float: right;
     height: 60px;
-    padding: 5px 20px;
-    margin-top: 15px;
+    /* Extend button range */
+    padding: 20px 20px 5px 20px;
     display: none;
 }
 
@@ -47,13 +47,10 @@ nav a {
 header>nav {
     display: flex;
     align-items: center;
-    background-color: skyblue;
-    color: white;
     height: 50px;
 }
 
 header>nav li {
-    display: flex;
     margin-left: 25px;
 }
 
@@ -62,6 +59,7 @@ header>nav a {
     text-decoration: none;
 }
 
+/* Footer deco with middle dot (·) */
 footer>nav li::after,
 footer>nav li:first-child::before {
     content: " \00B7\00A0";
@@ -76,11 +74,11 @@ footer>nav a {
 
 .text {
     text-align: center;
-    margin: auto 50px;
+    margin: auto 45px;
 }
 
 .text>p {
-    margin: 5px auto;
+    margin: 10px auto;
     text-align: center;
 }
 
@@ -92,7 +90,7 @@ form {
 
 .form-item {
     display: flex;
-    margin-top: 5px;
+    margin-top: 10px;
     justify-content: center;
 }
 
@@ -113,6 +111,7 @@ form {
     header>nav {
         height: auto;
         display: none;
+        /* Fix navigation texts shifting due to hamburger icon */
         margin-top: 1px;
     }
 
@@ -122,18 +121,12 @@ form {
     }
 
     header>nav li {
-        justify-content: center;
         margin: auto;
         margin-bottom: 10px;
         font-size: larger;
     }
 
-    #nav-icon {
-        display: block;
-    }
-
-    #nav-icon:hover+nav,
-    header nav:hover {
+    #nav-icon, #nav-icon:hover+nav, header nav:hover {
         display: flex;
     }
 
@@ -141,9 +134,15 @@ form {
         text-align: left;
     }
 
+    /* Fixing size of input items */
     .form-item {
         flex-direction: column;
-        width: 266px
+        width: 266px;
+        margin-top: 5px;
+    }
+
+    .form-input {
+        margin-top: 5px;
     }
 
     .form-input>select {
