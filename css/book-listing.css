@@ -1,0 +1,39 @@
+.book-category {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookshelf {
+    display: flex;
+    justify-content: center;
+}
+
+.book {
+    margin: 10px 30px;
+    width: 250px;
+}
+
+.book>img {
+    height: 250px;
+    border: 2px solid black;
+    transition: ease-in-out .3s;
+}
+
+.book>img:hover {
+    transform: scale(1.1);
+}
+
+.book>.book-title {
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .bookshelf {
+        flex-direction: column;
+    }
+
+    .book {
+        margin: 10px 0;
+        width: auto;
+    }
+}

@@ -41,6 +41,7 @@ nav a {
 
 header>nav li {
     margin-left: 25px;
+    font-size: larger;
 }
 
 header>nav a {
@@ -99,66 +100,7 @@ main ul p {
     margin-left: 0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.form-item {
-    display: flex;
-    margin-top: 5px;
-    justify-content: center;
-}
-
-.form-item>* {
-    margin: auto 5px;
-}
-
-.form-input {
-    margin-top: 5px;
-}
-
-.form-input>input[type="submit"],
-.form-input>input[type="reset"] {
-    width: 126px;
-}
-
-#extra-notes {
-    flex-direction: column;
-}
-
-.book-category {
-    display: flex;
-    flex-direction: column;
-}
-
-.bookshelf {
-    display: flex;
-    justify-content: center;
-}
-
-.book {
-    margin: 10px 30px;
-    width: 250px;
-}
-
-.book>img {
-    height: 250px;
-    border: 2px solid black;
-    transition: ease-in-out .3s;
-}
-
-.book>img:hover {
-    transform: scale(1.1);
-}
-
-.book>.book-title {
-    margin-top: 15px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
     #nav-icon,
     #nav-icon:hover+nav,
@@ -185,36 +127,5 @@ form {
     header>nav li {
         margin: auto;
         margin-bottom: 10px;
-        font-size: larger;
-    }
-
-    form {
-        text-align: left;
-    }
-
-    /* Fixing size of input items */
-    .form-item {
-        flex-direction: column;
-        width: 266px;
-        margin-top: 5px;
-    }
-
-    .form-input>select {
-        width: 256px;
-    }
-
-    .form-input>input[type="text"],
-    .form-input>input[type="email"],
-    .form-input>input[type="tel"] {
-        width: 248px;
-    }
-
-    .bookshelf {
-        flex-direction: column;
-    }
-
-    .book {
-        margin: 10px 0;
-        width: auto;
     }
 }

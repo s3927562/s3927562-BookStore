@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-item {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.form-item>* {
+    margin: auto 5px;
+}
+
+.form-input {
+    margin-top: 5px;
+}
+
+.form-input>input[type="submit"],
+.form-input>input[type="reset"] {
+    width: 126px;
+}
+
+#extra-notes {
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    form {
+        text-align: left;
+    }
+
+    /* Fixing size of input items */
+    .form-item {
+        flex-direction: column;
+        width: 266px;
+        margin-top: 5px;
+    }
+
+    .form-input>select {
+        width: 256px;
+    }
+
+    .form-input>input[type="text"],
+    .form-input>input[type="email"],
+    .form-input>input[type="tel"] {
+        width: 248px;
+    }
+}
