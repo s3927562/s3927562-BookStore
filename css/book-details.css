@@ -1,3 +1,15 @@
+/*
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Tran Thanh Tung
+    ID: s3927562
+    Acknowledgement: RMIT University, COSC2430 Course, Week 1 - 5 Lecture Slides & Videos
+*/
+
+/* Only applies to book details pages */
+
 h1 {
     display: flex;
     justify-content: center;
@@ -39,8 +51,9 @@ h1 {
     text-align: left;
 }
 
+/* "Add to Cart" button */
 form>input[type="submit"] {
-    color: white;;
+    color: white;
     background-color: forestgreen;
     border: 1px solid black;
     border-radius: 5px;
@@ -59,10 +72,12 @@ form>input[type="submit"] {
 }
 
 @media (max-width: 768px) {
+    /* Breadcrumb split */
     h1 {
         flex-direction: column;
     }
 
+    /* Rearrange book previews */
     .book-preview {
         flex-direction: column;
         align-items: center;
@@ -79,7 +94,7 @@ form>input[type="submit"] {
     .big-preview>img {
         height: 400px;
     }
-    
+
     .small-preview>img {
         height: 100px;
         margin: 10px;
