@@ -18,6 +18,10 @@ header {
     border-radius: 50%;
 }
 
+a {
+    color: blue;
+}
+
 #nav-icon {
     text-align: top;
     /* Hamburger icon is actually text */
@@ -83,17 +87,18 @@ footer>nav a {
 
 main {
     text-align: center;
+    margin: auto 30px;
 }
 
 main p {
-    margin: 10px 45px;
+    margin: 10px 0;
     text-align: center;
 }
 
 main ul {
     display: inline-block;
     margin: auto;
-    padding-left: 65px;
+    padding-left: 21px;
 }
 
 main ul p {
@@ -127,5 +132,11 @@ main ul p {
     header>nav li {
         margin: auto;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: auto 15px;
     }
 }
