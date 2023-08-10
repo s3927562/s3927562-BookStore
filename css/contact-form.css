@@ -36,10 +36,6 @@ form {
     width: 126px;
 }
 
-#extra-notes {
-    flex-direction: column;
-}
-
 @media (max-width: 768px) {
     form {
         text-align: left;

@@ -1,0 +1,105 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Tran Thanh Tung
+    ID: s3927562
+    Acknowledgement:
+        RMIT University, COSC2430 Course, Week 1 - 5 Lecture Slides & Videos
+        The Last Unicorn: https://www.amazon.com/Last-Unicorn-Peter-S-Beagle-ebook/dp/B09YLQ5PPM
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Unicorn</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/book-details.css">
+    <!-- https://depositphotos.com/53581759/stock-illustration-book-icon-vector-logo.html -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" id="logo"><img src="/images/icon.jpg" alt="BookStore Logo"></a>
+        <div id="nav-icon">☰</div>
+        <nav>
+            <ul>
+                <li><a href="/fiction">Fiction</a></li>
+                <li><a href="/non-fiction">Non-fiction</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms</a></li>
+                <li><a href="/copyright">Copyright</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="heading">
+                <h1>
+                    <div class="breadcrumb"><a href="/">Home</a>&nbsp;</div>
+                    <div class="breadcrumb">&GreaterGreater; <a href="/fiction">Fiction</a>&nbsp;</div>
+                    <div class="breadcrumb">&GreaterGreater; The Last Unicorn</div>
+                </h1>
+            </div>
+
+            <div class="book-preview">
+                <div class="big-preview"><img src="/images/the_last_unicorn/front_cover.jpg"
+                        alt="The Last Unicorn Front Cover"></div>
+
+                <div class="small-preview">
+                    <img src="/images/the_last_unicorn/cover_page.jpg" alt="The Last Unicorn Cover Page">
+                    <img src="/images/the_last_unicorn/first_page.jpg" alt="The Last Unicorn First Page">
+                    <img src="/images/the_last_unicorn/back_cover.jpg" alt="The Last Unicorn Back Cover">
+                </div>
+
+                <div class="book-purchase">
+                    <form action="">
+                        <strong>List Price:</strong>
+                        <p>&dollar;13.99</p>
+                        <input type="submit" name="add-book" value="Add to Cart">
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="book-details">
+                <div class="book-title"><strong>The Last Unicorn</strong></div>
+                <div class="book-author">Peter S. Beagle</div>
+                <hr>
+                <div class="book-description">
+                    The unicorn lived in a lilac wood, and she lived all alone...
+                    <br><br>
+                    ...so she ventured out from the safety of the enchanted forest on a quest for others of her kind.
+                    Joined along the way by the bumbling magician Schmendrick and the indomitable Molly Grue, the
+                    unicorn learns all about the joys and sorrows of life and love before meeting her destiny in the
+                    castle of a despondent monarch—and confronting the creature that would drive her kind to
+                    extinction....
+                    <br><br>
+                    In The Last Unicorn, renowned and beloved novelist Peter S. Beagle spins a poignant tale of love,
+                    loss, and wonder that has resonated with millions of readers around the world.
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms</a></li>
+                <li><a href="/copyright">Copyright</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

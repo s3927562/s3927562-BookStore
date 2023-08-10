@@ -1,0 +1,102 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assessment: Assignment 1
+    Author: Tran Thanh Tung
+    ID: s3927562
+    Acknowledgement:
+        RMIT University, COSC2430 Course, Week 1 - 5 Lecture Slides & Videos
+        Stardust: https://www.amazon.com/Stardust-Neil-Gaiman-ebook/dp/B000FC13Y0/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardust</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/book-details.css">
+    <!-- https://depositphotos.com/53581759/stock-illustration-book-icon-vector-logo.html -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" id="logo"><img src="/images/icon.jpg" alt="BookStore Logo"></a>
+        <div id="nav-icon">☰</div>
+        <nav>
+            <ul>
+                <li><a href="/fiction">Fiction</a></li>
+                <li><a href="/non-fiction">Non-fiction</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms</a></li>
+                <li><a href="/copyright">Copyright</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="heading">
+                <h1>
+                    <div class="breadcrumb"><a href="/">Home</a>&nbsp;</div>
+                    <div class="breadcrumb">&GreaterGreater; <a href="/fiction">Fiction</a>&nbsp;</div>
+                    <div class="breadcrumb">&GreaterGreater; Stardust</div>
+                </h1>
+            </div>
+
+            <div class="book-preview">
+                <div class="big-preview"><img src="/images/stardust/front_cover.jpg" alt="Stardust Front Cover">
+                </div>
+
+                <div class="small-preview">
+                    <img src="/images/stardust/cover_page.jpg" alt="Stardust Cover Page">
+                    <img src="/images/stardust/first_page.jpg" alt="Stardust First Page">
+                    <img src="/images/stardust/back_cover.jpg" alt="Stardust Back Cover">
+                </div>
+
+                <div class="book-purchase">
+                    <form action="">
+                        <strong>List Price:</strong>
+                        <p>&dollar;7.99</p>
+                        <input type="submit" name="add-book" value="Add to Cart">
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="book-details">
+                <div class="book-title"><strong>Stardust</strong></div>
+                <div class="book-author">Neil Gaiman</div>
+                <hr>
+                <div class="book-description">
+                    Young Tristran Thorn will do anything to win the cold heart of beautiful Victoria—even fetch her the
+                    star they watch fall from the night sky. But to do so, he must enter the unexplored lands on the
+                    other side of the ancient wall that gives their tiny village its name. Beyond that old stone wall,
+                    Tristran learns, lies Faerie—where nothing not even a fallen star, is what he imagined.
+                    <br><br>
+                    From the #1 New York Times bestselling author Neil Gaiman comes a remarkable quest into the dark and
+                    miraculous—in pursuit of love and the utterly impossible.
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms</a></li>
+                <li><a href="/copyright">Copyright</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
