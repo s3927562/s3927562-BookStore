@@ -43,6 +43,7 @@ a {
     /* Extend button range */
     padding: 20px 20px 5px 80px;
     display: none;
+    color: white;
 }
 
 nav ul {
