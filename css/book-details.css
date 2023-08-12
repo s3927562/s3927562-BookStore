@@ -10,9 +10,22 @@
 
 /* Only applies to book details pages */
 
-h1 {
+.breadcrumb {
     display: flex;
     justify-content: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+    content: "\00A0";
+}
+
+.breadcrumb-item:not(:first-child)::before {
+    content: "\226B\00A0";
 }
 
 .book-preview {
@@ -47,11 +60,6 @@ h1 {
     margin: auto 20px;
 }
 
-.book-details {
-    text-align: left;
-    font-family: 'Noto Sans', sans-serif;
-}
-
 /* "Add to Cart" button */
 form>input[type="submit"] {
     color: white;
@@ -61,6 +69,11 @@ form>input[type="submit"] {
     height: 30px;
     width: 150px;
     font-size: medium;
+}
+
+.book-details {
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .book-title {
@@ -75,8 +88,9 @@ form>input[type="submit"] {
 @media (max-width: 768px) {
 
     /* Breadcrumb split */
-    h1 {
+    .breadcrumb {
         flex-direction: column;
+        align-items: center;
     }
 
     /* Rearrange book previews */
